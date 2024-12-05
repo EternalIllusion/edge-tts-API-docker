@@ -5,4 +5,4 @@ COPY . /flask_project/
 #ADD ./tts.py /flask_project/
 WORKDIR /flask_project/
 
-CMD ["gunicorn", "edge-tts:app", "-c","gunicorn.conf"]
+CMD ["gunicorn", "python_tts_test:app", "-c","gunicorn.conf"]
